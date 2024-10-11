@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #94a2c4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #5A67D8;
+    color: white;
+}
+
+header .logo h1 {
+    font-size: 24px;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header .appointment-btn {
+    background-color: #3B82F6;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background-color: #E0E7FF;
+}
+
+.hero .doctor-info h2, 
+.hero .doctor-info p {
+    color: #1A202C;
+}
+
+.hero .doctor-image img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.search-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: #4A5568;
+    color: white;
+}
+
+.search-section .search-box,
+.search-section .appointment-box,
+.search-section .solution-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-section .icon {
+    margin-right: 10px;
+}
+
+.search-section .icon img {
+    max-width: 40px;
+}
