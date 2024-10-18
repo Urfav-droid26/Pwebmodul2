@@ -1,0 +1,102 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #4facfe, #00f2fe); /* Gradien biru */
+    margin: 0;
+}
+
+.todo-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.todo-container:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+h1 {
+    color: #0277bd;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    background-color: #e3f2fd;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #42a5f5, #0077c2); /* Tombol gradien biru */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #0077c2, #42a5f5); /* Hover animasi gradasi */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e3f2fd; /* Background item biru muda */
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    border: 1px solid #90caf9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+li:hover {
+    transform: translateX(5px); /* Efek geser item saat hover */
+}
+
+li button {
+    background-color: #18055d; /* Tombol hapus berwarna merah */
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+li button:hover {
+    background-color: #d32f2f; /* Warna tombol hapus saat hover */
+}
